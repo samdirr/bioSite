@@ -1,7 +1,7 @@
 /*
     Name: Sam Dirr
-    Assignment: 6.3
-    Date: July 5, 2026
+    Assignment: 7.2
+    Date: July 12, 2026
 */
 
 body {
@@ -75,6 +75,27 @@ main {
     margin-bottom: 25px;
 }
 
+.image-feature {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    margin: 0 0 25px 0;
+    padding: 15px;
+}
+
+.image-feature img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.image-feature figcaption {
+    color: #555555;
+    font-size: 0.95em;
+    margin-top: 10px;
+    text-align: center;
+}
+
 .hobby-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -96,4 +117,9 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+footer a {
+    color: #ffffff;
+    font-weight: 600;
 }
