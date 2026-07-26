@@ -3,52 +3,171 @@
 <head>
     <!--
         Name: Sam Dirr
-        Assignment: 7.2
-        Date: July 12, 2026
+        Assignment: 10.2
+        Date: July 26, 2026
     -->
     <meta charset="UTF-8">
-    <title>bioSite: Madi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet Madi: teacher, wife, cat mom, Disney fan, and coffee enthusiast.">
+    <title>Meet Madi | bioSite</title>
     <link rel="stylesheet" href="site.css">
 </head>
 
 <body>
-<header>
-    <h1>Madi's bioSite</h1>
+<header class="site-header">
+    <a class="site-name" href="index.html">Madi's bioSite</a>
+    <nav aria-label="Main navigation">
+        <a class="active" href="index.html" aria-current="page">
+            Home
+            <span class="sleeping-cats" aria-hidden="true">
+                <span class="sleeping-cat cat-gray">
+                    <span class="cat-tail"></span>
+                    <span class="cat-body"></span>
+                    <span class="cat-head">
+                        <span class="cat-ear ear-left"></span>
+                        <span class="cat-ear ear-right"></span>
+                        <span class="cat-eye eye-left"></span>
+                        <span class="cat-eye eye-right"></span>
+                        <span class="cat-nose"></span>
+                    </span>
+                </span>
+                <span class="sleeping-cat cat-orange">
+                    <span class="cat-tail"></span>
+                    <span class="cat-body"></span>
+                    <span class="cat-head">
+                        <span class="cat-ear ear-left"></span>
+                        <span class="cat-ear ear-right"></span>
+                        <span class="cat-eye eye-left"></span>
+                        <span class="cat-eye eye-right"></span>
+                        <span class="cat-nose"></span>
+                    </span>
+                </span>
+            </span>
+        </a>
+        <a href="about.html">About</a>
+        <a href="hobbies.html">Hobbies</a>
+    </nav>
 </header>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="hobbies.html">Hobbies</a>
-</nav>
 
 <main>
     <section class="hero">
-        <h2>Welcome to Madi's Story</h2>
-        <p>
-            This site introduces Madi through her background, interests, and the
-            experiences that help define who she is.
-        </p>
+        <div class="hero-copy">
+            <p class="eyebrow">Teacher • Wife • Cat Mom • Disney Fan</p>
+            <h1>Meet Madi</h1>
+            <p class="hero-quote">“Blonde, pink, and sunshiny.”</p>
+            <p>
+                Madi brings a bright personality and a strong sense of purpose
+                to everything she does. Her story is filled with meaningful
+                work, favorite people, Disney magic, coffee-fueled motivation,
+                and plenty of humor.
+            </p>
+            <a class="button" href="about.html">Discover Her Story</a>
+        </div>
+
+        <figure class="hero-photo">
+            <img src="images/madi-profile.JPEG" alt="Madi smiling beside a swimming pool">
+            <figcaption>Bright, determined, and always ready to make a memory.</figcaption>
+        </figure>
     </section>
 
-    <figure class="image-feature">
-        <img src="images/madi-profile.JPEG" alt="Portrait of Madi">
-        <figcaption>Madi is the focus of this bioSite project.</figcaption>
-    </figure>
+    <section class="story-section" aria-labelledby="shine-heading">
+        <div class="section-heading">
+            <p class="eyebrow">A Few Favorite Things</p>
+            <h2 id="shine-heading">What Makes Her Shine</h2>
+            <p>Her happiest moments combine adventure, connection, and the comforts of home.</p>
+        </div>
 
-    <section class="page-section">
-        <h3>Project Overview</h3>
-        <p>
-            The bioSite project is a multi-page website created for CSD 340 Web
-            Development with HTML and CSS. This first version establishes the
-            layout, typography, colors, and basic page structure.
-        </p>
+        <div class="story-grid">
+            <article class="story-card">
+                <img src="images/madi-disney-portrait.jpg" alt="Madi wearing Minnie Mouse ears at Disney">
+                <div class="card-copy">
+                    <span class="tag">Disney Magic</span>
+                    <h3>Her Happy Place</h3>
+                    <p>
+                        Magic Kingdom, Rapunzel, park snacks, and theme-park
+                        rides all have a special place in Madi's heart.
+                    </p>
+                </div>
+            </article>
+
+            <article class="story-card">
+                <img src="images/madi-couple-memory-BIGTEN-Champtionship-Win.jpg"
+                     alt="Madi and her husband celebrating a Big Ten championship">
+                <div class="card-copy">
+                    <span class="tag">Favorite Memories</span>
+                    <h3>Celebrating Together</h3>
+                    <p>
+                        Whether traveling or cheering from the stands, Madi
+                        treasures experiences shared with the people she loves.
+                    </p>
+                </div>
+            </article>
+
+            <article class="story-card">
+                <img src="images/madi-cats.jpg" alt="Madi's two cats relaxing together">
+                <div class="card-copy">
+                    <span class="tag">Life with Cats</span>
+                    <h3>Independent &amp; Affectionate</h3>
+                    <p>
+                        Madi loves that cats are comforting companions who are
+                        affectionate on their own terms.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="accomplishment">
+        <div class="accomplishment-mark" aria-hidden="true">★</div>
+        <div>
+            <p class="eyebrow">Proud Accomplishment</p>
+            <h2>Driven to Keep Growing</h2>
+            <p>
+                Within two years, Madi completed her master's degree, her Ed.S.
+                test, and her National Boards work. That achievement reflects
+                her determination, her commitment to education, and the energy
+                she brings to her career as a teacher.
+            </p>
+        </div>
+    </section>
+
+    <section class="dream-section">
+        <figure>
+            <img src="images/madi-lake-memory.jpg" alt="Madi and her husband sitting together on a boat">
+        </figure>
+        <div class="dream-copy">
+            <p class="eyebrow">Looking Ahead</p>
+            <h2>Sunshine, Water &amp; a Peaceful Future</h2>
+            <p>
+                Madi dreams of retiring from teaching and living near the
+                beach. Her ideal future includes warm weather, a pond, ducks,
+                and perhaps a cow, chickens, or pigs—a relaxed life surrounded
+                by animals and the people she loves.
+            </p>
+        </div>
+    </section>
+
+    <section class="fun-strip">
+        <img src="images/madi-funny-grinch-moment.jpg"
+             alt="Madi making a Grinch face beside a Grinch event sign">
+        <div>
+            <p class="eyebrow">Always Herself</p>
+            <h2>A Strong Personality with a Playful Side</h2>
+            <p>
+                Madi may be focused and hardworking, but she always leaves room
+                for laughter, funny photos, and stories worth remembering.
+            </p>
+            <a class="text-link" href="hobbies.html">Explore Madi's hobbies →</a>
+        </div>
     </section>
 </main>
 
 <footer>
     <p>&copy; 2026 Sam Dirr</p>
-    <p><a href="https://www.bellevue.edu/" target="_blank">Bellevue University</a></p>
+    <p>
+        Created for CSD 340 Web Development with HTML and CSS •
+        <a href="https://www.bellevue.edu/" target="_blank" rel="noopener noreferrer">Bellevue University</a>
+    </p>
 </footer>
 </body>
 </html>

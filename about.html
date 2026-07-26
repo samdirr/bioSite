@@ -3,61 +3,182 @@
 <head>
     <!--
         Name: Sam Dirr
-        Assignment: 7.2
-        Date: July 12, 2026
+        Assignment: 10.2
+        Date: July 26, 2026
     -->
     <meta charset="UTF-8">
-    <title>About Madi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Madi's personality, career, accomplishments, and dreams.">
+    <title>About Madi | bioSite</title>
     <link rel="stylesheet" href="site.css">
 </head>
 
 <body>
-<header>
-    <h1>About Madi</h1>
+<header class="site-header">
+    <a class="site-name" href="index.html">Madi's bioSite</a>
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html" aria-current="page">
+            About
+            <span class="sleeping-cats" aria-hidden="true">
+                <span class="sleeping-cat cat-gray">
+                    <span class="cat-tail"></span>
+                    <span class="cat-body"></span>
+                    <span class="cat-head">
+                        <span class="cat-ear ear-left"></span>
+                        <span class="cat-ear ear-right"></span>
+                        <span class="cat-eye eye-left"></span>
+                        <span class="cat-eye eye-right"></span>
+                        <span class="cat-nose"></span>
+                    </span>
+                </span>
+                <span class="sleeping-cat cat-orange">
+                    <span class="cat-tail"></span>
+                    <span class="cat-body"></span>
+                    <span class="cat-head">
+                        <span class="cat-ear ear-left"></span>
+                        <span class="cat-ear ear-right"></span>
+                        <span class="cat-eye eye-left"></span>
+                        <span class="cat-eye eye-right"></span>
+                        <span class="cat-nose"></span>
+                    </span>
+                </span>
+            </span>
+        </a>
+        <a href="hobbies.html">Hobbies</a>
+    </nav>
 </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="hobbies.html">Hobbies</a>
-</nav>
-
 <main>
-    <section class="page-section">
-        <h2>Who She Is</h2>
-        <p>
-            Madi is the focus of this bioSite project. This page introduces her
-            personality, background, and the qualities that make her story worth
-            sharing.
-        </p>
+    <section class="about-hero">
+        <div class="about-title">
+            <p class="eyebrow">The Person Behind the Sunshine</p>
+            <h1>About Madi</h1>
+            <p class="about-intro">
+                A dedicated teacher with a bright personality, a quick sense of
+                humor, and a deep appreciation for the people and routines that
+                make life joyful.
+            </p>
+        </div>
+
+        <figure class="about-hero-photo">
+            <img src="images/madi-about.JPEG"
+                 alt="Madi making a playful face while bundled inside a hoodie">
+            <figcaption>Focused when it matters—and never afraid to be silly.</figcaption>
+        </figure>
     </section>
 
-    <figure class="image-feature">
-        <img src="images/madi-about.JPEG" alt="Madi in a meaningful personal moment">
-        <figcaption>This image helps introduce Madi's personality and background.</figcaption>
-    </figure>
+    <section class="biography-section" aria-labelledby="biography-heading">
+        <div class="biography-heading">
+            <p class="eyebrow">Her Story</p>
+            <h2 id="biography-heading">Bright, Determined &amp; Fully Herself</h2>
+        </div>
 
-    <section class="page-section">
-        <h3>Background</h3>
-        <p>
-            This section will continue to grow as the bioSite project develops.
-            It will include more details from the planning and interview work
-            completed earlier in the course.
-        </p>
+        <div class="biography-copy">
+            <p>
+                Madi is a teacher, wife, cat mom, and Disney lover whose
+                personality is as bright as the things she enjoys most. She
+                describes herself as blonde, pink, and sunshiny, with a strong
+                personality and a love for the people, places, and routines
+                that make life feel joyful. Some of the things that make her
+                happiest are school breaks, Disney, coffee, her cats, and
+                spending time with her husband.
+            </p>
+
+            <p>
+                As an educator, Madi is dedicated, hardworking, and committed
+                to growth. One of her proudest accomplishments is completing
+                her master's degree, her Ed.S. test, and her National Boards
+                work within two years. This achievement shows her
+                determination and passion for teaching, as well as her
+                willingness to keep challenging herself professionally.
+            </p>
+
+            <p>
+                Outside of teaching, Madi enjoys the comfort of familiar
+                routines and happy places. Coffee and espresso are part of her
+                everyday rhythm because she connects the taste with
+                productivity and motivation. Her favorite drinks include a
+                Blondie or Smooth 7 with oat milk from 7 Brew, and a quad
+                espresso with oat milk and syrup from Starbucks. She also loves
+                Disney, especially Magic Kingdom, Rapunzel, theme-park snacks,
+                rides, and the funny memories made with people she cares about.
+            </p>
+
+            <p>
+                Madi's love for cats also reflects her personality. She
+                appreciates that cats are affectionate on their own terms,
+                independent, and comforting without being overbearing. Looking
+                ahead, one of her dreams is to retire from teaching and live
+                near the beach, surrounded by warmth, peace, animals, and a
+                life that feels relaxed, joyful, and fully her own.
+            </p>
+        </div>
     </section>
 
-    <section class="page-section">
-        <h3>Important Qualities</h3>
+    <section class="about-highlights" aria-label="Madi's qualities and accomplishments">
+        <article class="highlight-card highlight-rose">
+            <span class="highlight-icon" aria-hidden="true">✦</span>
+            <p class="eyebrow">Personality</p>
+            <h2>Pink &amp; Sunshiny</h2>
+            <p>
+                Madi brings a strong personality and bright energy wherever she
+                goes. She values laughter, happy memories, and being completely
+                herself.
+            </p>
+        </article>
+
+        <article class="highlight-card highlight-mint">
+            <span class="highlight-icon" aria-hidden="true">★</span>
+            <p class="eyebrow">Education</p>
+            <h2>Always Growing</h2>
+            <p>
+                Her master's degree, Ed.S. test, and National Boards work
+                reflect the drive and commitment she brings to her career as an
+                educator.
+            </p>
+        </article>
+    </section>
+
+    <section class="little-known">
+        <div class="little-known-copy">
+            <p class="eyebrow">Something You May Not Know</p>
+            <h2>She Talks—and She Listens</h2>
+            <blockquote>
+                “Madi talks a lot, but she also listens closely and absorbs
+                information that may help her later.”
+            </blockquote>
+            <p>
+                Her outgoing personality is matched by a thoughtful side. She
+                pays attention, remembers details, and carries useful lessons
+                forward.
+            </p>
+        </div>
+
+        <figure>
+            <img src="images/madi-dressedup-funny.jpg"
+                 alt="Madi dressed in a playful yellow mustache and eyebrows">
+            <figcaption>A little humor makes every story better.</figcaption>
+        </figure>
+    </section>
+
+    <section class="about-next">
+        <p class="eyebrow">Get to Know Her</p>
+        <h2>See What Brings Madi Joy</h2>
         <p>
-            Madi's story can be shaped through the people, experiences, goals,
-            and interests that are meaningful to her.
+            From Disney adventures and favorite coffee drinks to life with her
+            cats, Madi's hobbies reveal even more of her personality.
         </p>
+        <a class="button" href="hobbies.html">Explore Her Hobbies</a>
     </section>
 </main>
 
 <footer>
     <p>&copy; 2026 Sam Dirr</p>
-    <p><a href="https://www.bellevue.edu/" target="_blank">Bellevue University</a></p>
+    <p>
+        Created for CSD 340 Web Development with HTML and CSS •
+        <a href="https://www.bellevue.edu/" target="_blank" rel="noopener noreferrer">Bellevue University</a>
+    </p>
 </footer>
 </body>
 </html>

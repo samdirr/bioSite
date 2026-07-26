@@ -3,69 +3,173 @@
 <head>
     <!--
         Name: Sam Dirr
-        Assignment: 7.2
-        Date: July 12, 2026
+        Assignment: 10.2
+        Date: July 26, 2026
     -->
     <meta charset="UTF-8">
-    <title>Madi's Hobbies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Madi's love of Disney, coffee, cats, and making fun memories.">
+    <title>Madi's Hobbies | bioSite</title>
     <link rel="stylesheet" href="site.css">
 </head>
 
 <body>
-<header>
-    <h1>Madi's Hobbies</h1>
+<header class="site-header">
+    <a class="site-name" href="index.html">Madi's bioSite</a>
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="hobbies.html" aria-current="page">
+            Hobbies
+            <span class="sleeping-cats" aria-hidden="true">
+                <span class="sleeping-cat cat-gray">
+                    <span class="cat-tail"></span>
+                    <span class="cat-body"></span>
+                    <span class="cat-head">
+                        <span class="cat-ear ear-left"></span>
+                        <span class="cat-ear ear-right"></span>
+                        <span class="cat-eye eye-left"></span>
+                        <span class="cat-eye eye-right"></span>
+                        <span class="cat-nose"></span>
+                    </span>
+                </span>
+                <span class="sleeping-cat cat-orange">
+                    <span class="cat-tail"></span>
+                    <span class="cat-body"></span>
+                    <span class="cat-head">
+                        <span class="cat-ear ear-left"></span>
+                        <span class="cat-ear ear-right"></span>
+                        <span class="cat-eye eye-left"></span>
+                        <span class="cat-eye eye-right"></span>
+                        <span class="cat-nose"></span>
+                    </span>
+                </span>
+            </span>
+        </a>
+    </nav>
 </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="hobbies.html">Hobbies</a>
-</nav>
-
 <main>
-    <section class="page-section">
-        <h2>Interests and Activities</h2>
-        <p>
-            Madi's hobbies help show what she enjoys, how she spends her time,
-            and what brings energy into her daily life.
-        </p>
+    <section class="hobbies-hero">
+        <div class="hobbies-title">
+            <p class="eyebrow">The Things That Bring Her Joy</p>
+            <h1>Madi's Hobbies</h1>
+            <p>
+                From Disney adventures and coffee-fueled mornings to quiet time
+                with her cats, Madi's favorite things bring comfort, energy,
+                laughter, and lasting memories into her life.
+            </p>
+        </div>
+
+        <figure class="hobbies-hero-photo">
+            <img src="images/madi-disney-memory.jpg"
+                 alt="Madi and her husband enjoying an evening at Disney">
+            <figcaption>Making memories with favorite people in favorite places.</figcaption>
+        </figure>
     </section>
 
-    <figure class="image-feature">
-        <img src="images/madi-hobby.JPEG" alt="Madi enjoying one of her hobbies">
-        <figcaption>Madi's hobbies show what brings energy and joy into her life.</figcaption>
-    </figure>
-
-    <section class="hobby-list">
-        <div class="hobby-card">
-            <h3>Creative Interests</h3>
-            <p>
-                This area can describe creative hobbies, favorite activities, or
-                personal interests that help show Madi's personality.
-            </p>
+    <section class="hobby-showcase" aria-labelledby="favorites-heading">
+        <div class="section-heading">
+            <p class="eyebrow">Her Favorite Things</p>
+            <h2 id="favorites-heading">Magic, Motivation &amp; Cat Hair</h2>
+            <p>Three everyday joys that capture Madi's personality.</p>
         </div>
 
-        <div class="hobby-card">
-            <h3>Favorite Activities</h3>
+        <div class="hobby-feature-grid">
+            <article class="hobby-feature disney-feature">
+                <img src="images/madi-disney-portrait.jpg"
+                     alt="Madi wearing Minnie Mouse ears near the Millennium Falcon at Disney">
+                <div class="hobby-feature-copy">
+                    <span class="tag">Disney</span>
+                    <h3>Where the Magic Lives</h3>
+                    <p>
+                        Madi especially loves Magic Kingdom, Rapunzel, park
+                        snacks, rides, and the memories created with people she
+                        cares about.
+                    </p>
+                    <a class="text-link dark-link"
+                       href="https://disneyworld.disney.go.com/"
+                       target="_blank"
+                       rel="noopener noreferrer">Visit Walt Disney World →</a>
+                </div>
+            </article>
+
+            <article class="hobby-feature coffee-feature">
+                <div class="coffee-art" aria-hidden="true">
+                    <span class="coffee-steam steam-one"></span>
+                    <span class="coffee-steam steam-two"></span>
+                    <span class="coffee-cup">
+                        <span class="coffee"></span>
+                        <span class="coffee-handle"></span>
+                        <span class="cup-heart">♥</span>
+                    </span>
+                </div>
+                <div class="hobby-feature-copy">
+                    <span class="tag">Coffee</span>
+                    <h3>A Sip of Motivation</h3>
+                    <p>
+                        Coffee and espresso help Madi feel productive and ready
+                        to get things done. Her favorites include a Blondie or
+                        Smooth 7 with oat milk from 7 Brew, or a quad espresso
+                        with oat milk and syrup from Starbucks.
+                    </p>
+                </div>
+            </article>
+
+            <article class="hobby-feature cats-feature">
+                <img src="images/madi-cats.jpg" alt="Madi's orange and gray cats cuddled together">
+                <div class="hobby-feature-copy">
+                    <span class="tag">Cats</span>
+                    <h3>Comfort on Their Terms</h3>
+                    <p>
+                        Madi appreciates cats for being affectionate,
+                        independent, comforting, and never overbearing. They
+                        make home feel even more like home.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="disney-memory">
+        <div class="memory-mark" aria-hidden="true">✦</div>
+        <div>
+            <p class="eyebrow">A Favorite Disney Memory</p>
+            <h2>“Medium-Well Cheeks”</h2>
             <p>
-                This area can include activities Madi enjoys doing with friends,
-                family, or in her free time.
+                On one very hot Disney day, Madi rode Aladdin's Magic Carpets
+                with Kylie. Afterward, Kylie joked that they were not going out
+                to dinner because they already had “medium-well cheeks.” It is
+                exactly the kind of funny shared moment that makes a trip
+                unforgettable.
             </p>
         </div>
+    </section>
 
-        <div class="hobby-card">
-            <h3>Goals and Experiences</h3>
+    <section class="seasonal-fun">
+        <figure>
+            <img src="images/madi-funny-grinch-moment.jpg"
+                 alt="Madi posing beside a sign pointing toward the Grinch">
+        </figure>
+        <div>
+            <p class="eyebrow">Always Ready for a Laugh</p>
+            <h2>Fun Is Part of the Plan</h2>
             <p>
-                This area can connect Madi's hobbies to the goals, experiences,
-                or future plans that matter to her.
+                Whether she is visiting a favorite destination, posing for a
+                funny photo, or spending time with people she loves, Madi knows
+                that the best hobbies create stories worth telling later.
             </p>
+            <a class="button" href="index.html">Back to Madi's Story</a>
         </div>
     </section>
 </main>
 
 <footer>
     <p>&copy; 2026 Sam Dirr</p>
-    <p><a href="https://www.bellevue.edu/" target="_blank">Bellevue University</a></p>
+    <p>
+        Created for CSD 340 Web Development with HTML and CSS •
+        <a href="https://www.bellevue.edu/" target="_blank" rel="noopener noreferrer">Bellevue University</a>
+    </p>
 </footer>
 </body>
 </html>
